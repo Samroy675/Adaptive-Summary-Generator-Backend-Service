@@ -1,0 +1,351 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\6152789\\Documents\\GenAI Assignment 2 - ASG\\AdaptiveSummaryGenerator.Sln\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4A5AD60A-718E-44C3-9195-8DCAB5490F16}|AdaptiveSummaryGenerator.Core\\AdaptiveSummaryGenerator.Core.csproj|c:\\users\\6152789\\documents\\genai assignment 2 - asg\\adaptivesummarygenerator.sln\\adaptivesummarygenerator.core\\services\\kernelservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A5AD60A-718E-44C3-9195-8DCAB5490F16}|AdaptiveSummaryGenerator.Core\\AdaptiveSummaryGenerator.Core.csproj|solutionrelative:adaptivesummarygenerator.core\\services\\kernelservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A5AD60A-718E-44C3-9195-8DCAB5490F16}|AdaptiveSummaryGenerator.Core\\AdaptiveSummaryGenerator.Core.csproj|c:\\users\\6152789\\documents\\genai assignment 2 - asg\\adaptivesummarygenerator.sln\\adaptivesummarygenerator.core\\plugins\\summaryplugin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A5AD60A-718E-44C3-9195-8DCAB5490F16}|AdaptiveSummaryGenerator.Core\\AdaptiveSummaryGenerator.Core.csproj|solutionrelative:adaptivesummarygenerator.core\\plugins\\summaryplugin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A5AD60A-718E-44C3-9195-8DCAB5490F16}|AdaptiveSummaryGenerator.Core\\AdaptiveSummaryGenerator.Core.csproj|c:\\users\\6152789\\documents\\genai assignment 2 - asg\\adaptivesummarygenerator.sln\\adaptivesummarygenerator.core\\dependencyinjection\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A5AD60A-718E-44C3-9195-8DCAB5490F16}|AdaptiveSummaryGenerator.Core\\AdaptiveSummaryGenerator.Core.csproj|solutionrelative:adaptivesummarygenerator.core\\dependencyinjection\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73310D5E-1567-03A6-AAC0-F968B03F6F9E}|AdaptiveSummaryGenerator.Api\\AdaptiveSummaryGenerator.Api.csproj|c:\\users\\6152789\\documents\\genai assignment 2 - asg\\adaptivesummarygenerator.sln\\adaptivesummarygenerator.api\\extensions\\endpointregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73310D5E-1567-03A6-AAC0-F968B03F6F9E}|AdaptiveSummaryGenerator.Api\\AdaptiveSummaryGenerator.Api.csproj|solutionrelative:adaptivesummarygenerator.api\\extensions\\endpointregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73310D5E-1567-03A6-AAC0-F968B03F6F9E}|AdaptiveSummaryGenerator.Api\\AdaptiveSummaryGenerator.Api.csproj|c:\\users\\6152789\\documents\\genai assignment 2 - asg\\adaptivesummarygenerator.sln\\adaptivesummarygenerator.api\\endpoints\\summaryendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73310D5E-1567-03A6-AAC0-F968B03F6F9E}|AdaptiveSummaryGenerator.Api\\AdaptiveSummaryGenerator.Api.csproj|solutionrelative:adaptivesummarygenerator.api\\endpoints\\summaryendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73310D5E-1567-03A6-AAC0-F968B03F6F9E}|AdaptiveSummaryGenerator.Api\\AdaptiveSummaryGenerator.Api.csproj|c:\\users\\6152789\\documents\\genai assignment 2 - asg\\adaptivesummarygenerator.sln\\adaptivesummarygenerator.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73310D5E-1567-03A6-AAC0-F968B03F6F9E}|AdaptiveSummaryGenerator.Api\\AdaptiveSummaryGenerator.Api.csproj|solutionrelative:adaptivesummarygenerator.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A5AD60A-718E-44C3-9195-8DCAB5490F16}|AdaptiveSummaryGenerator.Core\\AdaptiveSummaryGenerator.Core.csproj|c:\\users\\6152789\\documents\\genai assignment 2 - asg\\adaptivesummarygenerator.sln\\adaptivesummarygenerator.core\\services\\requestvalidationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A5AD60A-718E-44C3-9195-8DCAB5490F16}|AdaptiveSummaryGenerator.Core\\AdaptiveSummaryGenerator.Core.csproj|solutionrelative:adaptivesummarygenerator.core\\services\\requestvalidationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A5AD60A-718E-44C3-9195-8DCAB5490F16}|AdaptiveSummaryGenerator.Core\\AdaptiveSummaryGenerator.Core.csproj|c:\\users\\6152789\\documents\\genai assignment 2 - asg\\adaptivesummarygenerator.sln\\adaptivesummarygenerator.core\\services\\promptloaderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A5AD60A-718E-44C3-9195-8DCAB5490F16}|AdaptiveSummaryGenerator.Core\\AdaptiveSummaryGenerator.Core.csproj|solutionrelative:adaptivesummarygenerator.core\\services\\promptloaderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A5AD60A-718E-44C3-9195-8DCAB5490F16}|AdaptiveSummaryGenerator.Core\\AdaptiveSummaryGenerator.Core.csproj|c:\\users\\6152789\\documents\\genai assignment 2 - asg\\adaptivesummarygenerator.sln\\adaptivesummarygenerator.core\\prompts\\technical-summary.prompt.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{4A5AD60A-718E-44C3-9195-8DCAB5490F16}|AdaptiveSummaryGenerator.Core\\AdaptiveSummaryGenerator.Core.csproj|solutionrelative:adaptivesummarygenerator.core\\prompts\\technical-summary.prompt.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A5AD60A-718E-44C3-9195-8DCAB5490F16}|AdaptiveSummaryGenerator.Core\\AdaptiveSummaryGenerator.Core.csproj|c:\\users\\6152789\\documents\\genai assignment 2 - asg\\adaptivesummarygenerator.sln\\adaptivesummarygenerator.core\\prompts\\keypoint-summary.prompt.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{4A5AD60A-718E-44C3-9195-8DCAB5490F16}|AdaptiveSummaryGenerator.Core\\AdaptiveSummaryGenerator.Core.csproj|solutionrelative:adaptivesummarygenerator.core\\prompts\\keypoint-summary.prompt.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A5AD60A-718E-44C3-9195-8DCAB5490F16}|AdaptiveSummaryGenerator.Core\\AdaptiveSummaryGenerator.Core.csproj|c:\\users\\6152789\\documents\\genai assignment 2 - asg\\adaptivesummarygenerator.sln\\adaptivesummarygenerator.core\\prompts\\general-summary.prompt.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{4A5AD60A-718E-44C3-9195-8DCAB5490F16}|AdaptiveSummaryGenerator.Core\\AdaptiveSummaryGenerator.Core.csproj|solutionrelative:adaptivesummarygenerator.core\\prompts\\general-summary.prompt.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A5AD60A-718E-44C3-9195-8DCAB5490F16}|AdaptiveSummaryGenerator.Core\\AdaptiveSummaryGenerator.Core.csproj|c:\\users\\6152789\\documents\\genai assignment 2 - asg\\adaptivesummarygenerator.sln\\adaptivesummarygenerator.core\\prompts\\business-summary.prompt.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{4A5AD60A-718E-44C3-9195-8DCAB5490F16}|AdaptiveSummaryGenerator.Core\\AdaptiveSummaryGenerator.Core.csproj|solutionrelative:adaptivesummarygenerator.core\\prompts\\business-summary.prompt.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A5AD60A-718E-44C3-9195-8DCAB5490F16}|AdaptiveSummaryGenerator.Core\\AdaptiveSummaryGenerator.Core.csproj|c:\\users\\6152789\\documents\\genai assignment 2 - asg\\adaptivesummarygenerator.sln\\adaptivesummarygenerator.core\\models\\responses\\summarygenerationresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A5AD60A-718E-44C3-9195-8DCAB5490F16}|AdaptiveSummaryGenerator.Core\\AdaptiveSummaryGenerator.Core.csproj|solutionrelative:adaptivesummarygenerator.core\\models\\responses\\summarygenerationresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A5AD60A-718E-44C3-9195-8DCAB5490F16}|AdaptiveSummaryGenerator.Core\\AdaptiveSummaryGenerator.Core.csproj|c:\\users\\6152789\\documents\\genai assignment 2 - asg\\adaptivesummarygenerator.sln\\adaptivesummarygenerator.core\\models\\requests\\summarygenerationrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A5AD60A-718E-44C3-9195-8DCAB5490F16}|AdaptiveSummaryGenerator.Core\\AdaptiveSummaryGenerator.Core.csproj|solutionrelative:adaptivesummarygenerator.core\\models\\requests\\summarygenerationrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A5AD60A-718E-44C3-9195-8DCAB5490F16}|AdaptiveSummaryGenerator.Core\\AdaptiveSummaryGenerator.Core.csproj|c:\\users\\6152789\\documents\\genai assignment 2 - asg\\adaptivesummarygenerator.sln\\adaptivesummarygenerator.core\\interfaces\\ikernelservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A5AD60A-718E-44C3-9195-8DCAB5490F16}|AdaptiveSummaryGenerator.Core\\AdaptiveSummaryGenerator.Core.csproj|solutionrelative:adaptivesummarygenerator.core\\interfaces\\ikernelservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A5AD60A-718E-44C3-9195-8DCAB5490F16}|AdaptiveSummaryGenerator.Core\\AdaptiveSummaryGenerator.Core.csproj|c:\\users\\6152789\\documents\\genai assignment 2 - asg\\adaptivesummarygenerator.sln\\adaptivesummarygenerator.core\\enums\\summarylengthtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A5AD60A-718E-44C3-9195-8DCAB5490F16}|AdaptiveSummaryGenerator.Core\\AdaptiveSummaryGenerator.Core.csproj|solutionrelative:adaptivesummarygenerator.core\\enums\\summarylengthtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A5AD60A-718E-44C3-9195-8DCAB5490F16}|AdaptiveSummaryGenerator.Core\\AdaptiveSummaryGenerator.Core.csproj|c:\\users\\6152789\\documents\\genai assignment 2 - asg\\adaptivesummarygenerator.sln\\adaptivesummarygenerator.core\\enums\\summaryfocustype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A5AD60A-718E-44C3-9195-8DCAB5490F16}|AdaptiveSummaryGenerator.Core\\AdaptiveSummaryGenerator.Core.csproj|solutionrelative:adaptivesummarygenerator.core\\enums\\summaryfocustype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A5AD60A-718E-44C3-9195-8DCAB5490F16}|AdaptiveSummaryGenerator.Core\\AdaptiveSummaryGenerator.Core.csproj|c:\\users\\6152789\\documents\\genai assignment 2 - asg\\adaptivesummarygenerator.sln\\adaptivesummarygenerator.core\\enums\\outputformattype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A5AD60A-718E-44C3-9195-8DCAB5490F16}|AdaptiveSummaryGenerator.Core\\AdaptiveSummaryGenerator.Core.csproj|solutionrelative:adaptivesummarygenerator.core\\enums\\outputformattype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73310D5E-1567-03A6-AAC0-F968B03F6F9E}|AdaptiveSummaryGenerator.Api\\AdaptiveSummaryGenerator.Api.csproj|c:\\users\\6152789\\documents\\genai assignment 2 - asg\\adaptivesummarygenerator.sln\\adaptivesummarygenerator.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{73310D5E-1567-03A6-AAC0-F968B03F6F9E}|AdaptiveSummaryGenerator.Api\\AdaptiveSummaryGenerator.Api.csproj|solutionrelative:adaptivesummarygenerator.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 14,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{74946827-37a0-11d2-a273-00c04f8ef4ff}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "RequestValidationService.cs",
+              "DocumentMoniker": "C:\\Users\\6152789\\Documents\\GenAI Assignment 2 - ASG\\AdaptiveSummaryGenerator.Sln\\AdaptiveSummaryGenerator.Core\\Services\\RequestValidationService.cs",
+              "RelativeDocumentMoniker": "AdaptiveSummaryGenerator.Core\\Services\\RequestValidationService.cs",
+              "ToolTip": "C:\\Users\\6152789\\Documents\\GenAI Assignment 2 - ASG\\AdaptiveSummaryGenerator.Sln\\AdaptiveSummaryGenerator.Core\\Services\\RequestValidationService.cs",
+              "RelativeToolTip": "AdaptiveSummaryGenerator.Core\\Services\\RequestValidationService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-29T05:14:23.592Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "PromptLoaderService.cs",
+              "DocumentMoniker": "C:\\Users\\6152789\\Documents\\GenAI Assignment 2 - ASG\\AdaptiveSummaryGenerator.Sln\\AdaptiveSummaryGenerator.Core\\Services\\PromptLoaderService.cs",
+              "RelativeDocumentMoniker": "AdaptiveSummaryGenerator.Core\\Services\\PromptLoaderService.cs",
+              "ToolTip": "C:\\Users\\6152789\\Documents\\GenAI Assignment 2 - ASG\\AdaptiveSummaryGenerator.Sln\\AdaptiveSummaryGenerator.Core\\Services\\PromptLoaderService.cs",
+              "RelativeToolTip": "AdaptiveSummaryGenerator.Core\\Services\\PromptLoaderService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-29T05:14:22.495Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "technical-summary.prompt.txt",
+              "DocumentMoniker": "C:\\Users\\6152789\\Documents\\GenAI Assignment 2 - ASG\\AdaptiveSummaryGenerator.Sln\\AdaptiveSummaryGenerator.Core\\Prompts\\technical-summary.prompt.txt",
+              "RelativeDocumentMoniker": "AdaptiveSummaryGenerator.Core\\Prompts\\technical-summary.prompt.txt",
+              "ToolTip": "C:\\Users\\6152789\\Documents\\GenAI Assignment 2 - ASG\\AdaptiveSummaryGenerator.Sln\\AdaptiveSummaryGenerator.Core\\Prompts\\technical-summary.prompt.txt",
+              "RelativeToolTip": "AdaptiveSummaryGenerator.Core\\Prompts\\technical-summary.prompt.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2026-04-29T05:14:20.423Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "keypoint-summary.prompt.txt",
+              "DocumentMoniker": "C:\\Users\\6152789\\Documents\\GenAI Assignment 2 - ASG\\AdaptiveSummaryGenerator.Sln\\AdaptiveSummaryGenerator.Core\\Prompts\\keypoint-summary.prompt.txt",
+              "RelativeDocumentMoniker": "AdaptiveSummaryGenerator.Core\\Prompts\\keypoint-summary.prompt.txt",
+              "ToolTip": "C:\\Users\\6152789\\Documents\\GenAI Assignment 2 - ASG\\AdaptiveSummaryGenerator.Sln\\AdaptiveSummaryGenerator.Core\\Prompts\\keypoint-summary.prompt.txt",
+              "RelativeToolTip": "AdaptiveSummaryGenerator.Core\\Prompts\\keypoint-summary.prompt.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2026-04-29T05:14:19.316Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "general-summary.prompt.txt",
+              "DocumentMoniker": "C:\\Users\\6152789\\Documents\\GenAI Assignment 2 - ASG\\AdaptiveSummaryGenerator.Sln\\AdaptiveSummaryGenerator.Core\\Prompts\\general-summary.prompt.txt",
+              "RelativeDocumentMoniker": "AdaptiveSummaryGenerator.Core\\Prompts\\general-summary.prompt.txt",
+              "ToolTip": "C:\\Users\\6152789\\Documents\\GenAI Assignment 2 - ASG\\AdaptiveSummaryGenerator.Sln\\AdaptiveSummaryGenerator.Core\\Prompts\\general-summary.prompt.txt",
+              "RelativeToolTip": "AdaptiveSummaryGenerator.Core\\Prompts\\general-summary.prompt.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2026-04-29T05:14:17.82Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "business-summary.prompt.txt",
+              "DocumentMoniker": "C:\\Users\\6152789\\Documents\\GenAI Assignment 2 - ASG\\AdaptiveSummaryGenerator.Sln\\AdaptiveSummaryGenerator.Core\\Prompts\\business-summary.prompt.txt",
+              "RelativeDocumentMoniker": "AdaptiveSummaryGenerator.Core\\Prompts\\business-summary.prompt.txt",
+              "ToolTip": "C:\\Users\\6152789\\Documents\\GenAI Assignment 2 - ASG\\AdaptiveSummaryGenerator.Sln\\AdaptiveSummaryGenerator.Core\\Prompts\\business-summary.prompt.txt",
+              "RelativeToolTip": "AdaptiveSummaryGenerator.Core\\Prompts\\business-summary.prompt.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2026-04-29T05:14:16.631Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SummaryPlugin.cs",
+              "DocumentMoniker": "C:\\Users\\6152789\\Documents\\GenAI Assignment 2 - ASG\\AdaptiveSummaryGenerator.Sln\\AdaptiveSummaryGenerator.Core\\Plugins\\SummaryPlugin.cs",
+              "RelativeDocumentMoniker": "AdaptiveSummaryGenerator.Core\\Plugins\\SummaryPlugin.cs",
+              "ToolTip": "C:\\Users\\6152789\\Documents\\GenAI Assignment 2 - ASG\\AdaptiveSummaryGenerator.Sln\\AdaptiveSummaryGenerator.Core\\Plugins\\SummaryPlugin.cs",
+              "RelativeToolTip": "AdaptiveSummaryGenerator.Core\\Plugins\\SummaryPlugin.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-29T05:14:15.23Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "SummaryGenerationResponse.cs",
+              "DocumentMoniker": "C:\\Users\\6152789\\Documents\\GenAI Assignment 2 - ASG\\AdaptiveSummaryGenerator.Sln\\AdaptiveSummaryGenerator.Core\\Models\\Responses\\SummaryGenerationResponse.cs",
+              "RelativeDocumentMoniker": "AdaptiveSummaryGenerator.Core\\Models\\Responses\\SummaryGenerationResponse.cs",
+              "ToolTip": "C:\\Users\\6152789\\Documents\\GenAI Assignment 2 - ASG\\AdaptiveSummaryGenerator.Sln\\AdaptiveSummaryGenerator.Core\\Models\\Responses\\SummaryGenerationResponse.cs",
+              "RelativeToolTip": "AdaptiveSummaryGenerator.Core\\Models\\Responses\\SummaryGenerationResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-29T05:14:09.52Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "SummaryGenerationRequest.cs",
+              "DocumentMoniker": "C:\\Users\\6152789\\Documents\\GenAI Assignment 2 - ASG\\AdaptiveSummaryGenerator.Sln\\AdaptiveSummaryGenerator.Core\\Models\\Requests\\SummaryGenerationRequest.cs",
+              "RelativeDocumentMoniker": "AdaptiveSummaryGenerator.Core\\Models\\Requests\\SummaryGenerationRequest.cs",
+              "ToolTip": "C:\\Users\\6152789\\Documents\\GenAI Assignment 2 - ASG\\AdaptiveSummaryGenerator.Sln\\AdaptiveSummaryGenerator.Core\\Models\\Requests\\SummaryGenerationRequest.cs",
+              "RelativeToolTip": "AdaptiveSummaryGenerator.Core\\Models\\Requests\\SummaryGenerationRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-29T05:14:07.577Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "IKernelService.cs",
+              "DocumentMoniker": "C:\\Users\\6152789\\Documents\\GenAI Assignment 2 - ASG\\AdaptiveSummaryGenerator.Sln\\AdaptiveSummaryGenerator.Core\\Interfaces\\IKernelService.cs",
+              "RelativeDocumentMoniker": "AdaptiveSummaryGenerator.Core\\Interfaces\\IKernelService.cs",
+              "ToolTip": "C:\\Users\\6152789\\Documents\\GenAI Assignment 2 - ASG\\AdaptiveSummaryGenerator.Sln\\AdaptiveSummaryGenerator.Core\\Interfaces\\IKernelService.cs",
+              "RelativeToolTip": "AdaptiveSummaryGenerator.Core\\Interfaces\\IKernelService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-29T05:14:02.766Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "SummaryLengthType.cs",
+              "DocumentMoniker": "C:\\Users\\6152789\\Documents\\GenAI Assignment 2 - ASG\\AdaptiveSummaryGenerator.Sln\\AdaptiveSummaryGenerator.Core\\Enums\\SummaryLengthType.cs",
+              "RelativeDocumentMoniker": "AdaptiveSummaryGenerator.Core\\Enums\\SummaryLengthType.cs",
+              "ToolTip": "C:\\Users\\6152789\\Documents\\GenAI Assignment 2 - ASG\\AdaptiveSummaryGenerator.Sln\\AdaptiveSummaryGenerator.Core\\Enums\\SummaryLengthType.cs",
+              "RelativeToolTip": "AdaptiveSummaryGenerator.Core\\Enums\\SummaryLengthType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-29T05:13:57.94Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "SummaryFocusType.cs",
+              "DocumentMoniker": "C:\\Users\\6152789\\Documents\\GenAI Assignment 2 - ASG\\AdaptiveSummaryGenerator.Sln\\AdaptiveSummaryGenerator.Core\\Enums\\SummaryFocusType.cs",
+              "RelativeDocumentMoniker": "AdaptiveSummaryGenerator.Core\\Enums\\SummaryFocusType.cs",
+              "ToolTip": "C:\\Users\\6152789\\Documents\\GenAI Assignment 2 - ASG\\AdaptiveSummaryGenerator.Sln\\AdaptiveSummaryGenerator.Core\\Enums\\SummaryFocusType.cs",
+              "RelativeToolTip": "AdaptiveSummaryGenerator.Core\\Enums\\SummaryFocusType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-29T05:13:52.124Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\6152789\\Documents\\GenAI Assignment 2 - ASG\\AdaptiveSummaryGenerator.Sln\\AdaptiveSummaryGenerator.Api\\appsettings.json",
+              "RelativeDocumentMoniker": "AdaptiveSummaryGenerator.Api\\appsettings.json",
+              "ToolTip": "C:\\Users\\6152789\\Documents\\GenAI Assignment 2 - ASG\\AdaptiveSummaryGenerator.Sln\\AdaptiveSummaryGenerator.Api\\appsettings.json",
+              "RelativeToolTip": "AdaptiveSummaryGenerator.Api\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-04-29T05:11:01.933Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "KernelService.cs",
+              "DocumentMoniker": "C:\\Users\\6152789\\Documents\\GenAI Assignment 2 - ASG\\AdaptiveSummaryGenerator.Sln\\AdaptiveSummaryGenerator.Core\\Services\\KernelService.cs",
+              "RelativeDocumentMoniker": "AdaptiveSummaryGenerator.Core\\Services\\KernelService.cs",
+              "ToolTip": "C:\\Users\\6152789\\Documents\\GenAI Assignment 2 - ASG\\AdaptiveSummaryGenerator.Sln\\AdaptiveSummaryGenerator.Core\\Services\\KernelService.cs",
+              "RelativeToolTip": "AdaptiveSummaryGenerator.Core\\Services\\KernelService.cs",
+              "ViewState": "AgIAAEwAAABgnJmZmdklwFgAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-29T04:17:57.507Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ServiceRegistration.cs",
+              "DocumentMoniker": "C:\\Users\\6152789\\Documents\\GenAI Assignment 2 - ASG\\AdaptiveSummaryGenerator.Sln\\AdaptiveSummaryGenerator.Core\\DependencyInjection\\ServiceRegistration.cs",
+              "RelativeDocumentMoniker": "AdaptiveSummaryGenerator.Core\\DependencyInjection\\ServiceRegistration.cs",
+              "ToolTip": "C:\\Users\\6152789\\Documents\\GenAI Assignment 2 - ASG\\AdaptiveSummaryGenerator.Sln\\AdaptiveSummaryGenerator.Core\\DependencyInjection\\ServiceRegistration.cs",
+              "RelativeToolTip": "AdaptiveSummaryGenerator.Core\\DependencyInjection\\ServiceRegistration.cs",
+              "ViewState": "AgIAAAgAAADgZmZmZuYcwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-29T04:17:38.473Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EndpointRegistration.cs",
+              "DocumentMoniker": "C:\\Users\\6152789\\Documents\\GenAI Assignment 2 - ASG\\AdaptiveSummaryGenerator.Sln\\AdaptiveSummaryGenerator.Api\\Extensions\\EndpointRegistration.cs",
+              "RelativeDocumentMoniker": "AdaptiveSummaryGenerator.Api\\Extensions\\EndpointRegistration.cs",
+              "ToolTip": "C:\\Users\\6152789\\Documents\\GenAI Assignment 2 - ASG\\AdaptiveSummaryGenerator.Sln\\AdaptiveSummaryGenerator.Api\\Extensions\\EndpointRegistration.cs",
+              "RelativeToolTip": "AdaptiveSummaryGenerator.Api\\Extensions\\EndpointRegistration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-29T04:17:14.244Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\6152789\\Documents\\GenAI Assignment 2 - ASG\\AdaptiveSummaryGenerator.Sln\\AdaptiveSummaryGenerator.Api\\Program.cs",
+              "RelativeDocumentMoniker": "AdaptiveSummaryGenerator.Api\\Program.cs",
+              "ToolTip": "C:\\Users\\6152789\\Documents\\GenAI Assignment 2 - ASG\\AdaptiveSummaryGenerator.Sln\\AdaptiveSummaryGenerator.Api\\Program.cs",
+              "RelativeToolTip": "AdaptiveSummaryGenerator.Api\\Program.cs",
+              "ViewState": "AgIAADIAAACANDMzM/MmwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-29T04:17:12.822Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SummaryEndpoints.cs",
+              "DocumentMoniker": "C:\\Users\\6152789\\Documents\\GenAI Assignment 2 - ASG\\AdaptiveSummaryGenerator.Sln\\AdaptiveSummaryGenerator.Api\\Endpoints\\SummaryEndpoints.cs",
+              "RelativeDocumentMoniker": "AdaptiveSummaryGenerator.Api\\Endpoints\\SummaryEndpoints.cs",
+              "ToolTip": "C:\\Users\\6152789\\Documents\\GenAI Assignment 2 - ASG\\AdaptiveSummaryGenerator.Sln\\AdaptiveSummaryGenerator.Api\\Endpoints\\SummaryEndpoints.cs",
+              "RelativeToolTip": "AdaptiveSummaryGenerator.Api\\Endpoints\\SummaryEndpoints.cs",
+              "ViewState": "AgIAAAoAAAAAaWZmZmYcwBcAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-29T04:17:10.33Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "OutputFormatType.cs",
+              "DocumentMoniker": "C:\\Users\\6152789\\Documents\\GenAI Assignment 2 - ASG\\AdaptiveSummaryGenerator.Sln\\AdaptiveSummaryGenerator.Core\\Enums\\OutputFormatType.cs",
+              "RelativeDocumentMoniker": "AdaptiveSummaryGenerator.Core\\Enums\\OutputFormatType.cs",
+              "ToolTip": "C:\\Users\\6152789\\Documents\\GenAI Assignment 2 - ASG\\AdaptiveSummaryGenerator.Sln\\AdaptiveSummaryGenerator.Core\\Enums\\OutputFormatType.cs",
+              "RelativeToolTip": "AdaptiveSummaryGenerator.Core\\Enums\\OutputFormatType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-29T04:13:47.864Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

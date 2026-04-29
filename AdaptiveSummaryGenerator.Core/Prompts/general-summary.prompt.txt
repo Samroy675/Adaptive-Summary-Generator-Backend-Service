@@ -1,0 +1,17 @@
+﻿Generate a {{$summaryLength}} general summary of the provided text.
+
+Input Text:
+{{$inputText}}
+
+Output Format:
+{{$outputFormat}}
+
+Instructions:
+- Capture the complete overall meaning of the content.
+- Keep the summary neutral and broadly understandable.
+- Do not overemphasize technical implementation or business outcomes.
+- If output format is BulletPoints, return concise bullet points only.
+- If output format is Paragraph, return a clean paragraph only.
+- Do not add headings, labels, introductions, or explanations.
+
+Return only final summary content.

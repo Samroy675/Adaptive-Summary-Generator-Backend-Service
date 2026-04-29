@@ -1,0 +1,17 @@
+﻿Generate a {{$summaryLength}} technical summary of the provided text.
+
+Input Text:
+{{$inputText}}
+
+Output Format:
+{{$outputFormat}}
+
+Instructions:
+- Focus on technical concepts, architecture, workflows, implementation details, and system behavior.
+- Ignore business commentary unless technically relevant.
+- Preserve technical terminology where useful.
+- If output format is BulletPoints, return concise bullet points only.
+- If output format is Paragraph, return a clean paragraph only.
+- Do not add headings, labels, introductions, or explanations.
+
+Return only final summary content.

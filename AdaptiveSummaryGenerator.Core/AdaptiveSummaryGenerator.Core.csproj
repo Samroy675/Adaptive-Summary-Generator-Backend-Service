@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Prompts\business-summary.prompt.txt" />
+    <None Remove="Prompts\general-summary.prompt.txt" />
+    <None Remove="Prompts\keypoint-summary.prompt.txt" />
+    <None Remove="Prompts\technical-summary.prompt.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Prompts\business-summary.prompt.txt" />
+    <EmbeddedResource Include="Prompts\general-summary.prompt.txt" />
+    <EmbeddedResource Include="Prompts\keypoint-summary.prompt.txt" />
+    <EmbeddedResource Include="Prompts\technical-summary.prompt.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.SemanticKernel" Version="1.74.0" />
+    <PackageReference Include="Microsoft.SemanticKernel.Connectors.OpenAI" Version="1.74.0" />
+  </ItemGroup>
+
+</Project>

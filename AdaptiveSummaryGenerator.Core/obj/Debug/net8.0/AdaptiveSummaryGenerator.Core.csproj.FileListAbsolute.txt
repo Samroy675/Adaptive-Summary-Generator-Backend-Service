@@ -1,0 +1,12 @@
+C:\Users\6152789\Documents\GenAI Assignment 2 - ASG\AdaptiveSummaryGenerator.Sln\AdaptiveSummaryGenerator.Core\bin\Debug\net8.0\AdaptiveSummaryGenerator.Core.deps.json
+C:\Users\6152789\Documents\GenAI Assignment 2 - ASG\AdaptiveSummaryGenerator.Sln\AdaptiveSummaryGenerator.Core\bin\Debug\net8.0\AdaptiveSummaryGenerator.Core.dll
+C:\Users\6152789\Documents\GenAI Assignment 2 - ASG\AdaptiveSummaryGenerator.Sln\AdaptiveSummaryGenerator.Core\bin\Debug\net8.0\AdaptiveSummaryGenerator.Core.pdb
+C:\Users\6152789\Documents\GenAI Assignment 2 - ASG\AdaptiveSummaryGenerator.Sln\AdaptiveSummaryGenerator.Core\obj\Debug\net8.0\AdaptiveSummaryGenerator.Core.csproj.AssemblyReference.cache
+C:\Users\6152789\Documents\GenAI Assignment 2 - ASG\AdaptiveSummaryGenerator.Sln\AdaptiveSummaryGenerator.Core\obj\Debug\net8.0\AdaptiveSummaryGenerator.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\6152789\Documents\GenAI Assignment 2 - ASG\AdaptiveSummaryGenerator.Sln\AdaptiveSummaryGenerator.Core\obj\Debug\net8.0\AdaptiveSummaryGenerator.Core.AssemblyInfoInputs.cache
+C:\Users\6152789\Documents\GenAI Assignment 2 - ASG\AdaptiveSummaryGenerator.Sln\AdaptiveSummaryGenerator.Core\obj\Debug\net8.0\AdaptiveSummaryGenerator.Core.AssemblyInfo.cs
+C:\Users\6152789\Documents\GenAI Assignment 2 - ASG\AdaptiveSummaryGenerator.Sln\AdaptiveSummaryGenerator.Core\obj\Debug\net8.0\AdaptiveSummaryGenerator.Core.csproj.CoreCompileInputs.cache
+C:\Users\6152789\Documents\GenAI Assignment 2 - ASG\AdaptiveSummaryGenerator.Sln\AdaptiveSummaryGenerator.Core\obj\Debug\net8.0\AdaptiveSummaryGenerator.Core.dll
+C:\Users\6152789\Documents\GenAI Assignment 2 - ASG\AdaptiveSummaryGenerator.Sln\AdaptiveSummaryGenerator.Core\obj\Debug\net8.0\refint\AdaptiveSummaryGenerator.Core.dll
+C:\Users\6152789\Documents\GenAI Assignment 2 - ASG\AdaptiveSummaryGenerator.Sln\AdaptiveSummaryGenerator.Core\obj\Debug\net8.0\AdaptiveSummaryGenerator.Core.pdb
+C:\Users\6152789\Documents\GenAI Assignment 2 - ASG\AdaptiveSummaryGenerator.Sln\AdaptiveSummaryGenerator.Core\obj\Debug\net8.0\ref\AdaptiveSummaryGenerator.Core.dll

@@ -1,0 +1,17 @@
+﻿Generate {{$summaryLength}} key highlights from the provided text.
+
+Input Text:
+{{$inputText}}
+
+Output Format:
+{{$outputFormat}}
+
+Instructions:
+- Extract only the most important takeaways.
+- Keep the response crisp, direct, and highlight-driven.
+- Remove descriptive filler content.
+- If output format is BulletPoints, return concise bullet points only.
+- If output format is Paragraph, return a short compact paragraph only.
+- Do not add headings, labels, introductions, or explanations.
+
+Return only final summary content.
