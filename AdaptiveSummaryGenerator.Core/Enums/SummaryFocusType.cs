@@ -2,6 +2,7 @@
 {
     public enum SummaryFocusType
     {
+        Auto,
         Business,
         General,
         KeyPoints,

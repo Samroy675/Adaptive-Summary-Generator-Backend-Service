@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <None Remove="Prompts\business-summary.prompt.txt" />
+    <None Remove="Prompts\content-analyzer.prompt.txt" />
     <None Remove="Prompts\general-summary.prompt.txt" />
     <None Remove="Prompts\keypoint-summary.prompt.txt" />
     <None Remove="Prompts\technical-summary.prompt.txt" />
@@ -15,6 +16,7 @@
 
   <ItemGroup>
     <EmbeddedResource Include="Prompts\business-summary.prompt.txt" />
+    <EmbeddedResource Include="Prompts\content-analyzer.prompt.txt" />
     <EmbeddedResource Include="Prompts\general-summary.prompt.txt" />
     <EmbeddedResource Include="Prompts\keypoint-summary.prompt.txt" />
     <EmbeddedResource Include="Prompts\technical-summary.prompt.txt" />

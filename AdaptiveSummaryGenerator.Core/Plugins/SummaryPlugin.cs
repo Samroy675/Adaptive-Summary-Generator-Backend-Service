@@ -32,7 +32,7 @@ public class SummaryPlugin
             ["outputFormat"] = outputFormat
         };
 
-        return await ExecutePromptAsync(template, args);
+        return await ExecutePromptAsync(template, args, "General");
     }
 
     [KernelFunction("GenerateTechnicalSummary")]
@@ -48,7 +48,7 @@ public class SummaryPlugin
             ["outputFormat"] = outputFormat
         };
 
-        return await ExecutePromptAsync(template, args);
+        return await ExecutePromptAsync(template, args, "Technical");
     }
 
     [KernelFunction("GenerateBusinessSummary")]
@@ -64,7 +64,7 @@ public class SummaryPlugin
             ["outputFormat"] = outputFormat
         };
 
-        return await ExecutePromptAsync(template, args);
+        return await ExecutePromptAsync(template, args, "Business");
     }
 
     [KernelFunction("GenerateKeyPointSummary")]
@@ -80,11 +80,50 @@ public class SummaryPlugin
             ["outputFormat"] = outputFormat
         };
 
-        return await ExecutePromptAsync(template, args);
+        return await ExecutePromptAsync(template, args, "KeyPoints");
     }
 
-    private async Task<string> ExecutePromptAsync(string template, KernelArguments args)
+    [KernelFunction("AnalyzeContentNature")]
+    [Description("Analyzes the input text and returns the most suitable summary focus category.")]
+    public async Task<string> AnalyzeContentNatureAsync(string inputText)
     {
+        _logger.LogInformation("Content analyzer invoked for automatic focus detection.");
+        _logger.LogInformation("Analyzing semantic nature of incoming text...");
+
+        var template = await _promptLoader.LoadAsync("content-analyzer");
+
+        var args = new KernelArguments
+        {
+            ["inputText"] = inputText
+        };
+
+        var settings = new OpenAIPromptExecutionSettings
+        {
+            Temperature = 0.0,
+            TopP = 0.5,
+            MaxTokens = 20
+        };
+
+        args.ExecutionSettings = new Dictionary<string, PromptExecutionSettings>
+        {
+            ["default"] = settings
+        };
+
+        var result = await _kernel.InvokePromptAsync(template, args);
+
+        _logger.LogInformation("Raw analyzer model response: {AnalyzerResponse}", result.GetValue<string>());
+
+        var detectedFocus = result.GetValue<string>()?.Trim() ?? "General";
+
+        _logger.LogInformation("Detected Summary Focus from Analyzer: {Focus}", detectedFocus);
+
+        return detectedFocus;
+    }
+
+    private async Task<string> ExecutePromptAsync(string template, KernelArguments args, string summaryType)
+    {
+        _logger.LogInformation("Executing {SummaryType} summarization plugin.", summaryType);
+
         var settings = new OpenAIPromptExecutionSettings
         {
             Temperature = 0.1,

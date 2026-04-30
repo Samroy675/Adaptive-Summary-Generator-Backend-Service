@@ -20,12 +20,5 @@ public static class SummaryEndpoints
         })
         .WithName("GenerateAdaptiveSummary")
         .WithOpenApi();
-
-        app.MapGet("/api/debug/ip", async () =>
-        {
-            using var httpClient = new HttpClient();
-            var ip = await httpClient.GetStringAsync("http://api.ipify.org");
-            return Results.Ok(new { OutboundIp = ip });
-        });
     }
 }

@@ -7,6 +7,13 @@ Output Format:
 {{$outputFormat}}
 
 Instructions:
+
+Length Rules:
+- If SummaryLength is Short: return maximum 2 sentences OR maximum 3 bullet points.
+- If SummaryLength is Medium: return 3 to 5 sentences OR maximum 5 bullet points.
+- If SummaryLength is Long: return 6 to 8 sentences OR maximum 8 bullet points.
+- Never exceed the allowed length.
+
 - Focus on business value, productivity, decision impact, customer outcomes, strategic relevance, or measurable benefit.
 - Minimize deep technical implementation details unless required for context.
 - Keep the language stakeholder friendly.

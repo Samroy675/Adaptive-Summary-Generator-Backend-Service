@@ -30,6 +30,7 @@ namespace AdaptiveSummaryGenerator.Core.Services
             _requestValidationService = requestValidationService;
 
             EnsurePluginsAdded();
+
         }
 
         private void EnsurePluginsAdded()
@@ -39,13 +40,35 @@ namespace AdaptiveSummaryGenerator.Core.Services
             _kernel.Plugins.AddFromObject(plugin);
             _pluginsAdded = true;
         }
+
+
         public async Task<SummaryGenerationResponse> GenerateAdaptiveSummaryAsync(SummaryGenerationRequest request)
         {
+            _logger.LogInformation("========== NEW SUMMARY REQUEST ==========");
+            _logger.LogInformation("Input Text: {InputText}", request.InputText);
+            _logger.LogInformation("Requested Length: {SummaryLength}", request.SummaryLength);
+            _logger.LogInformation("Requested Focus: {SummaryFocus}", request.SummaryFocus);
+            _logger.LogInformation("Requested Format: {OutputFormat}", request.OutputFormat);
+
             try
             {
+                var summaryPlugin = _serviceProvider.GetRequiredService<SummaryPlugin>();
+
+                string resolvedFocus = request.SummaryFocus.ToString();
+                if(request.SummaryFocus == Enums.SummaryFocusType.Auto)
+                {
+                    resolvedFocus = await summaryPlugin.AnalyzeContentNatureAsync(request.InputText);
+
+                    _logger.LogInformation("Auto mode selected. AI classified content as: {ResolvedFocus}", resolvedFocus);
+                }
+
                 _requestValidationService.Validate(request);
                 EnsurePluginsAdded();
-                var prompt = BuildSummaryPrompt(request);
+                var prompt = BuildSummaryPrompt(request, resolvedFocus);
+
+                _logger.LogInformation("Resolved Summary Focus Used For Prompt Routing: {ResolvedFocus}", resolvedFocus);
+                _logger.LogInformation("Prompt sent to Semantic Kernel orchestrator.");
+
                 var settings = new OpenAIPromptExecutionSettings
                 {
                     ToolCallBehavior = ToolCallBehavior.AutoInvokeKernelFunctions,
@@ -63,11 +86,10 @@ namespace AdaptiveSummaryGenerator.Core.Services
 
                 var result = await _kernel.InvokePromptAsync(prompt, arguments);
 
-                _logger.LogInformation("Kernel Raw Response: {Response}", result);
-
                 var responseText = result.GetValue<string>() ?? string.Empty;
 
-                _logger.LogInformation("Adaptive summary generated successfully.");
+                _logger.LogInformation("Generated Final Summary: {GeneratedSummary}", responseText);
+                _logger.LogInformation("========== REQUEST COMPLETED ==========");
 
                 return new SummaryGenerationResponse
                 {
@@ -89,7 +111,7 @@ namespace AdaptiveSummaryGenerator.Core.Services
             }
         }
 
-        private string BuildSummaryPrompt(SummaryGenerationRequest request)
+        private string BuildSummaryPrompt(SummaryGenerationRequest request, string resolvedFocus)
         {
             return $@"
             You are an orchestration agent.
@@ -110,7 +132,7 @@ namespace AdaptiveSummaryGenerator.Core.Services
            summaryLength = {request.SummaryLength}
            outputFormat = {request.OutputFormat}
 
-           Requested SummaryFocus = {request.SummaryFocus}";
+           Requested SummaryFocus: {resolvedFocus}";
         }
     }
 }
