@@ -1,0 +1,260 @@
+@page "/"
+@using AdaptiveSummaryGenerator.UI.Models
+@using AdaptiveSummaryGenerator.UI.Services
+@inject ISummaryService SummaryService
+@inject AppState AppState
+@inject IJSRuntime JS
+@implements IDisposable
+
+<PageTitle>Adaptive Summary Generator</PageTitle>
+
+@if (_showCopyToast)
+{
+    <div class="copy-toast">
+        <i class="bi bi-check-circle-fill"></i> Copied to clipboard!
+    </div>
+}
+
+<div class="asg-main">
+
+    <!-- ① Input Text -->
+    <div class="asg-card">
+        <div class="input-card-header">
+            <div class="section-label">
+                <span class="section-number">1</span>
+                <div>
+                    <div class="section-title">Input Text</div>
+                    <div class="section-hint">Paste or type the text you want to summarize.</div>
+                </div>
+            </div>
+            <div class="char-counter">
+                <span>Characters: <span class="count-val">@_inputText.Length</span></span>
+                <span class="sep">|</span>
+                <span>Words: <span class="count-val">@WordCount</span></span>
+            </div>
+        </div>
+        <textarea class="asg-textarea"
+                  placeholder="Paste your text here... (articles, reports, code docs, emails, etc.)"
+                  @bind="_inputText"
+                  @bind:event="oninput"
+                  rows="6"></textarea>
+    </div>
+
+    <!-- ②③④ Controls + Generate -->
+    <div class="asg-card controls-card">
+
+        <div class="control-group">
+            <div class="section-label" style="margin-bottom:4px">
+                <span class="section-number">2</span>
+                <span class="section-title">Summary Focus</span>
+            </div>
+            <select class="asg-select" @bind="_request.SummaryFocus">
+                <option value="Auto">🤖 Auto (AI will decide)</option>
+                <option value="Technical">⚙️ Technical</option>
+                <option value="Business">💼 Business</option>
+                <option value="General">📄 General</option>
+                <option value="KeyPoints">🔑 Key Points</option>
+            </select>
+        </div>
+
+        <div class="control-group">
+            <div class="section-label" style="margin-bottom:4px">
+                <span class="section-number">3</span>
+                <span class="section-title">Summary Length</span>
+            </div>
+            <select class="asg-select" @bind="_request.SummaryLength">
+                <option value="Short">≡ Short (1-2 sentences)</option>
+                <option value="Medium">≡ Medium (3-5 sentences)</option>
+                <option value="Detailed">≡ Detailed (6+ sentences)</option>
+            </select>
+        </div>
+
+        <div class="control-group">
+            <div class="section-label" style="margin-bottom:4px">
+                <span class="section-number">4</span>
+                <span class="section-title">Output Format</span>
+            </div>
+            <select class="asg-select" @bind="_request.OutputFormat">
+                <option value="Paragraph">¶ Paragraph</option>
+                <option value="BulletPoints">• Bullet Points</option>
+            </select>
+        </div>
+
+        <button class="btn-generate"
+                @onclick="GenerateSummary"
+                disabled="@(_isLoading || string.IsNullOrWhiteSpace(_inputText))">
+            @if (_isLoading)
+            {
+                <span><i class="bi bi-arrow-repeat spin-icon"></i> Generating...</span>
+            }
+            else
+            {
+                <div class="btn-generate-inner">
+                    <span><i class="bi bi-stars"></i> Generate Summary</span>
+                    <span class="btn-generate-sub">AI will create your summary</span>
+                </div>
+            }
+        </button>
+    </div>
+
+    <!-- AI Thought Process Panel (shown when footer toggle is ON) -->
+    @if (AppState.ShowThoughtProcess)
+    {
+        <ThoughtProcessPanel Steps="_thoughtSteps" />
+    }
+
+    <!-- ⑤ Generated Summary -->
+    <div class="asg-card">
+        <div class="summary-card-header">
+            <div class="section-label" style="margin-bottom:0">
+                <span class="section-number">5</span>
+                <span class="section-title">Generated Summary</span>
+            </div>
+            <div class="summary-actions">
+                <button class="btn-action"
+                        @onclick="CopySummary"
+                        disabled="@string.IsNullOrEmpty(_response?.GeneratedSummary)">
+                    <i class="bi bi-clipboard"></i> Copy
+                </button>
+                <button class="btn-action"
+                        @onclick="DownloadSummary"
+                        disabled="@string.IsNullOrEmpty(_response?.GeneratedSummary)">
+                    <i class="bi bi-download"></i> Download
+                </button>
+                <button class="btn-regenerate"
+                        @onclick="Regenerate"
+                        disabled="@(_isLoading || _response == null || string.IsNullOrWhiteSpace(_inputText))">
+                    <i class="bi bi-arrow-repeat @(_isLoading ? "spin-icon" : "")"></i>
+                    Regenerate
+                </button>
+            </div>
+        </div>
+
+        <div class="summary-output @(_isLoading ? "is-loading" : "")">
+            @if (_isLoading)
+            {
+                <div class="loading-dots">
+                    <span></span><span></span><span></span>
+                </div>
+                <span style="color:var(--text-muted)">Generating your summary...</span>
+            }
+            else if (_response != null && !string.IsNullOrEmpty(_response.GeneratedSummary))
+            {
+                @_response.GeneratedSummary
+            }
+            else
+            {
+                <div class="summary-empty">
+                    <i class="bi bi-file-earmark-text"></i>
+                    <span>Your generated summary will appear here.</span>
+                    <span style="font-size:12px">
+                        Enter some text above and click <strong>Generate Summary</strong>.
+                    </span>
+                </div>
+            }
+        </div>
+    </div>
+
+    <!-- Metadata strip -->
+    <SummaryMetadata Response="_response" />
+
+</div>
+
+@code {
+    // ── State ───────────────────────────────────────────────────────────────
+    private string _inputText = string.Empty;
+    private bool   _isLoading;
+    private bool   _showCopyToast;
+
+    private SummaryRequest   _request  = new();
+    private SummaryResponse? _response;
+    private List<ThoughtStep> _thoughtSteps = new();
+
+    private int WordCount => string.IsNullOrWhiteSpace(_inputText)
+        ? 0
+        : _inputText.Trim().Split(new[] { ' ', '\n', '\r', '\t' }, StringSplitOptions.RemoveEmptyEntries).Length;
+
+    // ── Lifecycle ───────────────────────────────────────────────────────────
+    protected override void OnInitialized()
+    {
+        AppState.OnThoughtProcessChanged += StateHasChanged;
+    }
+
+    public void Dispose()
+    {
+        AppState.OnThoughtProcessChanged -= StateHasChanged;
+    }
+
+    // ── Actions ─────────────────────────────────────────────────────────────
+    private async Task GenerateSummary() => await RunGeneration();
+
+    // Regenerate: re-calls the exact same input + same params instantly.
+    // No edits needed. SK's Temperature/TopP naturally produces a fresh variation.
+    private async Task Regenerate() => await RunGeneration();
+
+    private async Task RunGeneration()
+    {
+        if (string.IsNullOrWhiteSpace(_inputText)) return;
+
+        _isLoading = true;
+        _response  = null;
+        _thoughtSteps.Clear();
+        StateHasChanged();
+
+        _request.InputText = _inputText;
+
+        if (AppState.ShowThoughtProcess)
+            await AnimateThoughtTrace();
+
+        // Calls ISummaryService — DummySummaryService locally, RealSummaryService when integrated
+        _response  = await SummaryService.GenerateSummaryAsync(_request);
+        _isLoading = false;
+        StateHasChanged();
+    }
+
+    private async Task AnimateThoughtTrace()
+    {
+        bool isAuto = _request.SummaryFocus == "Auto";
+
+        var steps = new[]
+        {
+            ("done",   $"Request received by <strong>SummaryController</strong> → forwarded to KernelService"),
+            ("done",   "KernelService validating request and checking <strong>SummaryFocus</strong> mode"),
+            (isAuto ? "active" : "done",
+             isAuto
+                ? "<strong>Auto mode detected</strong> — invoking AnalyzeContentNatureAsync via SummaryPlugin"
+                : $"<strong>Manual focus:</strong> {_request.SummaryFocus} — skipping content analysis"),
+            ("active", "Loading <strong>prompt template</strong> for resolved focus"),
+            ("active", "Semantic Kernel selecting function via <strong>AutoInvokeKernelFunctions</strong>"),
+            ("active", "<strong>Azure OpenAI GPT-4.1-mini</strong> generating final summary..."),
+        };
+
+        foreach (var (state, html) in steps)
+        {
+            _thoughtSteps.Add(new ThoughtStep { State = state, Html = html });
+            StateHasChanged();
+            await Task.Delay(300);
+        }
+    }
+
+    private async Task CopySummary()
+    {
+        if (_response is null) return;
+        await JS.InvokeVoidAsync("navigator.clipboard.writeText", _response.GeneratedSummary);
+        _showCopyToast = true;
+        StateHasChanged();
+        await Task.Delay(2500);
+        _showCopyToast = false;
+        StateHasChanged();
+    }
+
+    private async Task DownloadSummary()
+    {
+        if (_response is null) return;
+        var content = $"Summary ({_response.DetectedFocus} | {_response.LengthUsed} | {_response.FormatUsed})\n"
+                    + $"Generated: {_response.GeneratedAt}\n\n"
+                    + _response.GeneratedSummary;
+        var base64 = Convert.ToBase64String(System.Text.Encoding.UTF8.GetBytes(content));
+        await JS.InvokeVoidAsync("asgDownload", "summary.txt", base64);
+    }
+}

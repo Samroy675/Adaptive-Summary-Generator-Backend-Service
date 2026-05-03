@@ -1,0 +1,44 @@
+# Build outputs
+bin/
+obj/
+
+# .NET artifacts
+*.dll
+*.exe
+*.runtimeconfig.json
+*.deps.json
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.rsuser
+
+# IDE folders
+.vscode/
+.idea/
+.vs/
+
+# Logs
+*.log
+
+# Publish output
+/publish/
+/dist/
+/out/
+
+# Environment / secrets (do NOT commit)
+appsettings.Development.json
+appsettings.Local.json
+*.secret.json
+
+# Auto-generated files
+Generated/
+*.g.cs
+
+# Backup
+*.bak
+
+# macOS / Linux
+.DS_Store
+Thumbs.db

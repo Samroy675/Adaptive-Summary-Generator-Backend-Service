@@ -1,0 +1,39 @@
+@using AdaptiveSummaryGenerator.UI.Models
+
+@if (Response is not null)
+{
+    <div class="metadata-card">
+        <div class="meta-item">
+            <div class="meta-icon green"><i class="bi bi-bullseye"></i></div>
+            <div class="meta-info">
+                <span class="meta-label">Detected Focus</span>
+                <span class="meta-value green">@Response.DetectedFocus</span>
+            </div>
+        </div>
+        <div class="meta-item">
+            <div class="meta-icon orange"><i class="bi bi-arrow-down-circle"></i></div>
+            <div class="meta-info">
+                <span class="meta-label">Length Used</span>
+                <span class="meta-value">@Response.LengthUsed</span>
+            </div>
+        </div>
+        <div class="meta-item">
+            <div class="meta-icon purple"><i class="bi bi-layout-text-window-reverse"></i></div>
+            <div class="meta-info">
+                <span class="meta-label">Format Used</span>
+                <span class="meta-value">@Response.FormatUsed</span>
+            </div>
+        </div>
+        <div class="meta-item last">
+            <div class="meta-icon blue"><i class="bi bi-clock"></i></div>
+            <div class="meta-info">
+                <span class="meta-label">Generated At</span>
+                <span class="meta-value">@Response.GeneratedAt.ToString("MMM dd, yyyy hh:mm tt")</span>
+            </div>
+        </div>
+    </div>
+}
+
+@code {
+    [Parameter] public SummaryResponse? Response { get; set; }
+}

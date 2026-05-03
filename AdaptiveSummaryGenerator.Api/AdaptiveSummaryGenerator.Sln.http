@@ -1,0 +1,6 @@
+@AdaptiveSummaryGenerator.Sln_HostAddress = http://localhost:5183
+
+GET {{AdaptiveSummaryGenerator.Sln_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

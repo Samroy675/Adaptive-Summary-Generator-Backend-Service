@@ -1,0 +1,131 @@
+@page "/about"
+@inject NavigationManager Nav
+
+<PageTitle>About – Adaptive Summary Generator</PageTitle>
+
+<div class="asg-main">
+    <div class="asg-card about-page">
+
+        <!-- Header -->
+        <div class="about-page-header">
+            <button class="btn-back" @onclick='() => Nav.NavigateTo("/")'>
+                <i class="bi bi-arrow-left"></i> Back
+            </button>
+            <div class="section-label">
+                <div class="brand-icon-lg">
+                    <i class="bi bi-file-text-fill"></i>
+                </div>
+                <div>
+                    <div class="about-title">Adaptive Summary Generator</div>
+                    <div class="about-subtitle">AI-Powered Smart Summarization</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- What is this? -->
+        <div class="about-section">
+            <h3 class="about-section-title"><i class="bi bi-info-circle"></i> What is this?</h3>
+            <p>
+                <strong>Adaptive Summary Generator (ASG)</strong> is an AI-powered summarization engine
+                built as a GenAI assignment project. It uses <strong>Semantic Kernel</strong> for GenAI
+                orchestration with intelligent plugin-based function calling. The backend analyzes your
+                input semantically and routes to the most appropriate summarization strategy — no hardcoded
+                if/else routing.
+            </p>
+        </div>
+
+        <!-- Key Capabilities -->
+        <div class="about-section">
+            <h3 class="about-section-title"><i class="bi bi-stars"></i> Key Capabilities</h3>
+            <div class="about-badges">
+                <div class="about-badge">
+                    <i class="bi bi-cpu"></i>
+                    <div>
+                        <strong>Auto Content Analysis</strong>
+                        <span>Semantically detects if content is Technical, Business, General, or KeyPoints</span>
+                    </div>
+                </div>
+                <div class="about-badge">
+                    <i class="bi bi-sliders"></i>
+                    <div>
+                        <strong>User-Controlled Summarization</strong>
+                        <span>Length (Short / Medium / Detailed), Focus, and Format are all user-driven</span>
+                    </div>
+                </div>
+                <div class="about-badge">
+                    <i class="bi bi-plugin"></i>
+                    <div>
+                        <strong>SK Function Calling</strong>
+                        <span>Semantic Kernel automatically selects and invokes the right plugin function</span>
+                    </div>
+                </div>
+                <div class="about-badge">
+                    <i class="bi bi-cloud"></i>
+                    <div>
+                        <strong>Azure OpenAI GPT-4.1-mini</strong>
+                        <span>Backed by GPT-4.1-mini for fast, high-quality generation</span>
+                    </div>
+                </div>
+                <div class="about-badge">
+                    <i class="bi bi-arrow-repeat"></i>
+                    <div>
+                        <strong>Regenerate</strong>
+                        <span>Re-calls the same input with same parameters — SK's Temperature/TopP ensures a fresh variation each time</span>
+                    </div>
+                </div>
+                <div class="about-badge">
+                    <i class="bi bi-diagram-3"></i>
+                    <div>
+                        <strong>AI Thought Process</strong>
+                        <span>Toggle in the footer to see the live GenAI orchestration trace step by step</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Architecture Flow -->
+        <div class="about-section">
+            <h3 class="about-section-title"><i class="bi bi-arrow-right-circle"></i> How It Works</h3>
+            <div class="about-flow">
+                <div class="flow-step">
+                    <div class="flow-num">1</div>
+                    <div><strong>User sends request</strong> — InputText + Focus + Length + Format</div>
+                </div>
+                <div class="flow-arrow"><i class="bi bi-arrow-down"></i></div>
+                <div class="flow-step">
+                    <div class="flow-num">2</div>
+                    <div><strong>KernelService</strong> — validates, checks if Auto mode is selected</div>
+                </div>
+                <div class="flow-arrow"><i class="bi bi-arrow-down"></i></div>
+                <div class="flow-step">
+                    <div class="flow-num">3</div>
+                    <div><strong>SummaryPlugin</strong> — if Auto, runs content-analyzer prompt to detect focus</div>
+                </div>
+                <div class="flow-arrow"><i class="bi bi-arrow-down"></i></div>
+                <div class="flow-step">
+                    <div class="flow-num">4</div>
+                    <div><strong>Orchestration prompt</strong> — built with resolved focus, SK picks the right kernel function</div>
+                </div>
+                <div class="flow-arrow"><i class="bi bi-arrow-down"></i></div>
+                <div class="flow-step">
+                    <div class="flow-num">5</div>
+                    <div><strong>Azure OpenAI</strong> — generates final summary via the selected prompt template</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tech Stack -->
+        <div class="about-section">
+            <h3 class="about-section-title"><i class="bi bi-stack"></i> Tech Stack</h3>
+            <div class="tech-stack">
+                <span class="tech-pill"><i class="bi bi-filetype-cs"></i> .NET 8</span>
+                <span class="tech-pill"><i class="bi bi-window"></i> Blazor Web App</span>
+                <span class="tech-pill"><i class="bi bi-cpu"></i> Semantic Kernel</span>
+                <span class="tech-pill"><i class="bi bi-cloud"></i> Azure OpenAI</span>
+                <span class="tech-pill"><i class="bi bi-braces"></i> Minimal API</span>
+                <span class="tech-pill"><i class="bi bi-brush"></i> CSS + Bootstrap Icons</span>
+            </div>
+        </div>
+
+    </div>
+</div>

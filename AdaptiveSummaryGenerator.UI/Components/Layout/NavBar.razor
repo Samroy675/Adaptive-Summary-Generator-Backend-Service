@@ -1,0 +1,20 @@
+@inject NavigationManager Nav
+
+<nav class="asg-navbar">
+    <div class="navbar-brand" @onclick='() => Nav.NavigateTo("/")' style="cursor:pointer">
+        <div class="brand-icon">
+            <i class="bi bi-file-text-fill"></i>
+        </div>
+        <div class="brand-text">
+            <span class="brand-title">Adaptive Summary Generator</span>
+            <span class="brand-subtitle">AI-Powered Smart Summarization</span>
+        </div>
+    </div>
+
+    <div class="navbar-actions">
+        <button class="btn-about" @onclick='() => Nav.NavigateTo("/about")'>
+            <i class="bi bi-info-circle"></i>
+            About
+        </button>
+    </div>
+</nav>

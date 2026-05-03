@@ -1,0 +1,24 @@
+﻿Generate a {{$summaryLength}} technical summary of the provided text.
+
+Input Text:
+{{$inputText}}
+
+Output Format:
+{{$outputFormat}}
+
+Instructions:
+
+Length Rules:
+- If SummaryLength is Short: return maximum 2 sentences OR maximum 3 bullet points.
+- If SummaryLength is Medium: return 3 to 5 sentences OR maximum 5 bullet points.
+- If SummaryLength is Long: return 6 to 8 sentences OR maximum 8 bullet points.
+- Never exceed the allowed length.
+
+- Focus on technical concepts, architecture, workflows, implementation details, and system behavior.
+- Ignore business commentary unless technically relevant.
+- Preserve technical terminology where useful.
+- If output format is BulletPoints, return concise bullet points only.
+- If output format is Paragraph, return a clean paragraph only.
+- Do not add headings, labels, introductions, or explanations.
+
+Return only final summary content.

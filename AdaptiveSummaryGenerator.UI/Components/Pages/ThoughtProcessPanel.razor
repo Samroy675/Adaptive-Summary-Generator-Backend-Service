@@ -1,0 +1,24 @@
+@using AdaptiveSummaryGenerator.UI.Models
+
+@if (Steps.Any())
+{
+    <div class="thought-panel">
+        <div class="thought-panel-header">
+            <i class="bi bi-cpu"></i>
+            GenAI Orchestration Trace
+        </div>
+        <div class="thought-steps">
+            @foreach (var step in Steps)
+            {
+                <div class="thought-step">
+                    <div class="step-dot @step.State"></div>
+                    <div class="step-text">@((MarkupString)step.Html)</div>
+                </div>
+            }
+        </div>
+    </div>
+}
+
+@code {
+    [Parameter] public List<ThoughtStep> Steps { get; set; } = new();
+}
